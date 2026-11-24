@@ -17,13 +17,17 @@ Source tree of **BlackSpammerXS** (a.k.a. *Black*, *BlackSpammerXLite*), recover
 ## Layout
 
 ```
-src/BlackSpammerXLite/          the application project (37 classes, 23 form resource files)
+src/BlackSpammerXLite/          the application project (37 classes, 13,387 lines, 23 form resource files)
   BlackSpammerXS.csproj         reconstructed project file
   Program.cs                    entry point
   *.cs                          forms, managers, websocket + audit + spam logic
   *.resx                        per-form resources, images included (base64 in the resx)
   Properties/                   AssemblyInfo + generated Resources/Settings designers
   app.ico                       application icon
+recovered/                      decompiled output that does not belong in the build
+  fody-generated/               Costura/Fody build-time helpers
+  BlackVerifyNumber/            decompiled third-party plugin embedded in Black.exe
+  manifest.txt                  SHA-256 of every recovered file
 lib/                            place the non-NuGet assemblies here (see DEPENDENCIES.md)
 ```
 
