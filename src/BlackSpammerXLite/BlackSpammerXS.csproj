@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <AssemblyName>BlackSpammerXS</AssemblyName>
+    <RootNamespace>BlackSpammerXS</RootNamespace>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net472</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Siticone.UI">
+      <HintPath>..\..\lib\Siticone.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\lib\Bunifu_UI_v1.52.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="BlackVerifyNumber">
+      <HintPath>..\..\lib\BlackVerifyNumber.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsInput">
+      <HintPath>..\..\lib\WindowsInput.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="System.Reactive" Version="4.3.2" />
+    <PackageReference Include="System.Interactive.Async" Version="3.1.1" />
+    <PackageReference Include="Websocket.Client" Version="4.3.0" />
+    <PackageReference Include="BrotliSharpLib" Version="0.3.3" />
+    <PackageReference Include="System.Threading.Channels" Version="4.7.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="1.1.1" />
+    <PackageReference Include="Costura.Fody" Version="4.1.0" PrivateAssets="All" />
+    <PackageReference Include="Fody" Version="6.8.1" PrivateAssets="All" />
+  </ItemGroup>
+
+</Project>
